@@ -1,0 +1,15 @@
+[project]
+name = "acme-mcp-lab"
+version = "0.1.0"
+description = "Session 2 lab: build an MCP server and client for a mock logistics API"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=2.3",
+    "anthropic>=0.40",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
